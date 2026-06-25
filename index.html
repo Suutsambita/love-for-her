@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Forever ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#ffd6e7,#ffc0cb,#ffb6c1,#ffe6f2);
+background-size:400% 400%;
+animation:bgMove 15s ease infinite;
+overflow-x:hidden;
+color:white;
+text-align:center;
+
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+
+padding:40px 20px;
+position:relative;
+z-index:2;
+
+}
+
+h1{
+
+font-family:'Great Vibes',cursive;
+font-size:70px;
+margin-top:20px;
+text-shadow:0 0 15px rgba(255,255,255,.6);
+
+}
+
+.subtitle{
+
+font-size:22px;
+margin-top:10px;
+opacity:.95;
+
+}
+
+.photo{
+
+width:260px;
+height:260px;
+border-radius:50%;
+border:8px solid white;
+overflow:hidden;
+margin:35px auto;
+box-shadow:0 0 40px rgba(255,255,255,.6);
+
+}
+
+.photo img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+.card{
+
+max-width:900px;
+margin:auto;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.card p{
+
+font-size:20px;
+line-height:1.8;
+
+}
+
+.highlight{
+
+font-size:28px;
+font-weight:bold;
+color:#fff8b0;
+
+}
+
+button{
+
+margin-top:35px;
+padding:18px 40px;
+border:none;
+border-radius:50px;
+background:white;
+color:#ff4f87;
+font-size:20px;
+cursor:pointer;
+transition:.4s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+box-shadow:0 0 25px white;
+
+}
+
+#hidden{
+
+display:none;
+margin-top:30px;
+font-size:24px;
+animation:fade 2s;
+
+}
+
+@keyframes fade{
+
+from{opacity:0;}
+to{opacity:1;}
+
+}
+
+footer{
+
+margin:50px;
+font-size:18px;
+opacity:.9;
+
+}
+
+.heart{
+
+position:fixed;
+bottom:-30px;
+color:#fff;
+animation:float linear infinite;
+pointer-events:none;
+
+}
+
+@keyframes float{
+
+to{
+
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+
+}
+
+}
+
+.code{
+
+margin-top:40px;
+font-size:23px;
+background:rgba(255,255,255,.2);
+padding:20px;
+border-radius:20px;
+font-family:monospace;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>To My Beautiful Girl ❤️</h1>
+
+<p class="subtitle">
+Every heartbeat whispers your name.
+</p>
+
+<div class="photo">
+<img src="her.jpeg" alt="Her Photo">
+</div>
+
+<div class="card">
+
+<p>
+
+There are billions of people in this world...
+
+Yet somehow...
+
+The universe wrote my story with <span class="highlight">YOU</span> in every chapter.
+
+<br><br>
+
+You are not just someone I love.
+
+You are my peace after chaos.
+
+My smile without a reason.
+
+My favorite notification.
+
+My safest place.
+
+My greatest blessing.
+
+<br><br>
+
+If I had one wish...
+
+It wouldn't be money.
+
+It wouldn't be success.
+
+It would simply be...
+
+<span class="highlight">
+
+Growing old while still holding your hand.
+
+</span>
+
+</p>
+
+<div class="code">
+
+❤️ Love Algorithm ❤️
+
+<br><br>
+
+while (myHeart.beats()) {<br>
+&nbsp;&nbsp;if (life.exists()) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;love++;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;care++;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;respect++;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;choose(You);<br>
+&nbsp;&nbsp;}<br>
+}<br><br>
+
+System.out.println("Forever = You ❤️");
+
+</div>
+
+<button onclick="showMessage()">
+Click Here ❤️
+</button>
+
+<div id="hidden">
+
+🌹
+
+No matter how many years pass...
+
+No matter where life takes us...
+
+I will still look at you...
+
+Like you're my favorite miracle.
+
+I love you more than words will ever be able to explain.
+
+❤️ Forever Yours ❤️
+
+</div>
+
+</div>
+
+<footer>
+
+Made with infinite love by the luckiest boyfriend ❤️
+
+</footer>
+
+</div>
+
+<script>
+
+function showMessage(){
+
+document.getElementById("hidden").style.display="block";
+
+confetti();
+
+}
+
+function confetti(){
+
+for(let i=0;i<150;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML=Math.random()>0.5?"❤":"💖";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=3+Math.random()*5+"s";
+
+heart.style.fontSize=15+Math.random()*35+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),8000);
+
+}
+
+}
+
+setInterval(()=>{
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=15+Math.random()*20+"px";
+
+heart.style.animationDuration=5+Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),10000);
+
+},300);
+
+</script>
+
+</body>
+</html>
